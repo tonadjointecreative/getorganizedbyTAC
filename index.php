@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Asana</title>
+    <title>Asana | <?php echo count($today) ?> tasks for Today!</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,200" rel="stylesheet">
@@ -22,7 +22,7 @@
 
     <!-- Dragula - Drag n Drop -->
     <script src="javascripts/dragula.min.js"></script>
-    <link rel="stylesheet" href="dragula.min.css"> 
+
     <!-- Init Dragula in a script -->
     <script src="javascripts/main.js"></script>
 

@@ -2,38 +2,39 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("dragula.min.css");
 @import url("asana.css");
 @import url("asana_new_colors.css");
 @import url("menu.css");
-/* line 11, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body, p, ul, li, a {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 body {
   margin-bottom: 30px;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-weight: 200;
   margin-bottom: 30px;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 li, ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #sidebar {
   position: fixed;
   padding: 0 25px;
@@ -44,40 +45,40 @@ a:hover {
   color: #aaa;
   z-index: 15;
 }
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace {
   margin-bottom: 10px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace a {
   font-size: 16px;
   color: #ddd;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace:hover a {
   color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 55, ../sass/screen.scss */
+  /* line 56, ../sass/screen.scss */
   .row {
     margin-top: 50px;
   }
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .row .column {
   position: relative;
   border-right: 1px dotted #e2e2e2;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .list-title {
   background-color: white;
   margin: 0 0 0 -15px;
   padding: 20px 0 20px 15px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 65, ../sass/screen.scss */
+  /* line 66, ../sass/screen.scss */
   .list-title {
     position: fixed;
     top: 0;
@@ -87,81 +88,81 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 77, ../sass/screen.scss */
+  /* line 78, ../sass/screen.scss */
   .todo-list {
     min-height: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 77, ../sass/screen.scss */
+  /* line 78, ../sass/screen.scss */
   .todo-list {
     min-height: calc(100% - 73px);
     margin-top: 73px;
   }
 }
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .todo-list .todo-item {
   position: relative;
   margin: 0 -15px 0px;
   padding: 10px 15px 15px;
   border-top: 1px dotted #e2e2e2;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .todo-list .todo-item:first-of-type {
   border-top: none;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .todo-list .todo-item:hover {
   background-color: #eee;
   cursor: move;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .todo-list .todo-item .date {
   color: #aaa;
   display: inline;
   font-size: 11px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .todo-list .todo-item .date.green {
   color: #37C597;
 }
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .todo-list .todo-item .date.red {
   color: #FC636B;
 }
-/* line 108, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .todo-list .todo-item .date.blue {
   color: #80E6FF;
 }
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .todo-list .todo-item .project, .todo-list .todo-item .workspace {
   padding: 0.1em 0.7em;
   border-radius: 10px;
   font-size: 11px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .todo-list .todo-item .project:hover, .todo-list .todo-item .workspace:hover {
   color: white;
   background-color: black;
   text-decoration: none;
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .todo-list .todo-item .workspace {
   color: #aaa;
 }
-/* line 125, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .todo-list .todo-item .default-color {
   background-color: #ddd;
   color: #333;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .todo-list .todo-item .name {
   margin: 0;
   font-size: 16px;
   color: #222;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -170,7 +171,7 @@ footer {
   margin: 0;
   padding: 0;
 }
-/* line 145, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 footer a {
   background-color: white;
   display: inline-block;
@@ -180,7 +181,7 @@ footer a {
   letter-spacing: 2px;
   color: #ccc;
 }
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 footer a:hover {
   color: #FC636B;
 }
