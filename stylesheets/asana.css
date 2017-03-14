@@ -1,0 +1,108 @@
+/* Asana colors */
+/* line 2, ../sass/asana.scss */
+.dark-pink {
+  background-color: #b13f94;
+  color: #f4b6db;
+}
+
+/* line 5, ../sass/asana.scss */
+.dark-green {
+  background-color: #427e53;
+  color: #b7d086;
+}
+
+/* line 8, ../sass/asana.scss */
+.dark-blue {
+  background-color: #3c68bb;
+  color: #b6c3db;
+}
+
+/* line 11, ../sass/asana.scss */
+.dark-red {
+  background-color: #c73f27;
+  color: #efbdbd;
+}
+
+/* line 14, ../sass/asana.scss */
+.dark-teal {
+  background-color: #008eaa;
+  color: #aad1eb;
+}
+
+/* line 17, ../sass/asana.scss */
+.dark-brown {
+  background-color: #906461;
+  color: #ffeda4;
+}
+
+/* line 20, ../sass/asana.scss */
+.dark-orange {
+  background-color: #e17000;
+  color: #facdaa;
+}
+
+/* line 23, ../sass/asana.scss */
+.dark-purple {
+  background-color: #6743b3;
+  color: #d7bee4;
+}
+
+/* line 26, ../sass/asana.scss */
+.dark-warm-gray {
+  background-color: #493c3d;
+  color: #cec5c6;
+}
+
+/* line 29, ../sass/asana.scss */
+.light-pink {
+  background-color: #f4b6db;
+  color: #b13f94;
+}
+
+/* line 32, ../sass/asana.scss */
+.light-green {
+  background-color: #b7d086;
+  color: #427e53;
+}
+
+/* line 35, ../sass/asana.scss */
+.light-blue {
+  background-color: #b6c3db;
+  color: #3c68bb;
+}
+
+/* line 38, ../sass/asana.scss */
+.light-red {
+  background-color: #efbdbd;
+  color: #c73f27;
+}
+
+/* line 41, ../sass/asana.scss */
+.light-teal {
+  background-color: #aad1eb;
+  color: #008eaa;
+}
+
+/* line 44, ../sass/asana.scss */
+.light-yellow {
+  background-color: #ffeda4;
+  color: #906461;
+}
+
+/* line 47, ../sass/asana.scss */
+.light-orange {
+  background-color: #facdaa;
+  color: #e17000;
+}
+
+/* line 50, ../sass/asana.scss */
+.light-purple {
+  background-color: #d7bee4;
+  color: #6743b3;
+}
+
+/* line 53, ../sass/asana.scss */
+.light-warm-gray {
+  background-color: #cec5c6;
+  color: #493c3d;
+}

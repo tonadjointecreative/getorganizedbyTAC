@@ -1,0 +1,157 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import url("asana.css");				// Asana colors
+@import url("asana_new_colors.css");	// Asana new colors
+@import url("menu.css");	// Menu CSS
+@import "compass/css3";
+
+body,p,ul,li,a{
+	font-family: 'Montserrat', sans-serif;
+}
+body{
+	margin-bottom:30px;
+}
+h1,h2,h3,h4{
+	font-weight:200;
+	margin-bottom:30px;
+}
+li,ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a:hover{
+	cursor:pointer;            
+}
+
+#sidebar{
+	position:fixed;
+	padding:0 25px;
+	top:0;
+	bottom:0;
+	width:250px;
+	background-color:#222;
+	color:#aaa;
+	z-index:15;
+	.workspaces-list{
+		.workspace{
+			margin-bottom:10px;
+			a{
+				font-size:16px;
+				color:#ddd;
+			}
+			&:hover{
+				a{
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+
+.row{
+	@media only screen and (max-width: 767px) {
+		margin-top: 50px;
+	}
+	.column{
+		position:relative;
+		border-right: 1px dotted #e2e2e2;
+	}
+}
+
+.list-title{
+	background-color:white;
+	margin:0 0 0 -15px;
+	padding:20px 0 20px 15px;
+	@media only screen and (min-width: 992px) {
+		position: fixed;
+		top: 0;
+		width:25%;
+		z-index:10;
+	}
+}
+
+.todo-list{
+	@media only screen and (min-width: 768px) {	
+		min-height:100%;
+	}
+	@media only screen and (min-width: 992px) {
+		min-height:calc(100% - 73px);	
+		margin-top:73px;
+	}
+
+	.todo-item{
+		position: relative;
+		margin: 0 -15px 0px;
+		padding:10px 15px 15px;
+		border-top: 1px dotted #e2e2e2;
+		&:first-of-type{
+			border-top:none;
+		}
+		&:hover{
+			background-color:#eee;
+			cursor:move;
+		}		
+		.date{
+			color:#aaa;
+			display: inline;
+			font-size: 11px;
+			&.green{
+				color:#37C597;
+			}
+			&.red{
+				color:#FC636B;
+			}
+			&.blue{
+				color:#80E6FF;
+			}
+		}
+		.project, .workspace{
+			padding:0.1em 0.7em;
+			border-radius: 10px;
+			font-size:11px;
+			&:hover{
+				color:white;
+				background-color:black;            
+				text-decoration: none;   	
+			}
+		}
+		.workspace{
+			color:#aaa;
+		}
+		.default-color{
+			background-color:#ddd;
+			color:#333;
+		}
+		.name{
+			margin:0;
+			font-size:16px;
+			// display: block;
+			color:#222;
+		}
+	}
+}
+
+footer{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	margin:0;
+	padding:0;
+	a{
+		background-color:white;
+		display: inline-block;
+		font-size:11px;
+		padding:5px 5px 10px;
+		text-transform: uppercase;
+		letter-spacing:2px;
+		color:#ccc;
+		&:hover{
+			color:#FC636B;
+		}
+	}
+}
