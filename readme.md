@@ -1,7 +1,6 @@
 ## About
 
-A basic plugin for Asana to load all tasks you are assigned to accross **all workspaces**
-Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
+A basic plugin for Asana to load all tasks you are assigned to accross **all workspaces**. Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
 
 ## Installation
 
@@ -16,6 +15,7 @@ Asana does not provice a global 'my tasks' overview, but does offer a nice API t
 ## Usage
 
 View all your tasks! Get productive. Yay!
+
 You can even drag and drop your tasks in different columns. They will be synchronised with Asana.
 
 ## API
