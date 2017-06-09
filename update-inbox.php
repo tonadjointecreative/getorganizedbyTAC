@@ -1,4 +1,6 @@
-<?php
+<?php 
+
+include('config.php');
 
 // Set timezone
 date_default_timezone_set('Europe/Amsterdam');
@@ -25,14 +27,7 @@ $user_id = $user['data']['id'];
 
 // Create empty task lists
 $inbox = [];
-$today = [];
-$upcoming = [];
-$later = [];
-
 $inbox_completed = [];
-$today_completed = [];
-$upcoming_completed = [];
-$later_completed = [];
 
 // Create empty project list
 $projects = [];
@@ -60,30 +55,25 @@ foreach ($workspaces as $i => $workspace) {
     foreach ($tasks['data'] as $j => $task) {
         $a = $task['assignee_status'];
         $c = $task['completed'];
-        if($a == "today"){
-            if($c)
-                $today_completed[] = $task;
-            else
-                $today[] = $task;
-        }elseif($a == "upcoming"){
-            if($c)
-                $upcoming_completed[] = $task;
-            else
-                $upcoming[] = $task;
-        }elseif($a == "inbox"){
+        if($a == "inbox"){
             if($c)
                 $inbox_completed[] = $task;
             else
                 $inbox[] = $task;
-        }elseif($a == "later"){
-            if($c)
-                $later_completed[] = $task;
-            else
-                $later[] = $task;
         }
     }
 }
 curl_close($ch);
+
+include('helper.php');
+include('display.php');
+
+foreach ($inbox as $task) {
+    display($task, $workspaces, $projects);
+}
+foreach ($inbox_completed as $task) {
+    display($task, $workspaces, $projects);
+}
 
 
 ?>

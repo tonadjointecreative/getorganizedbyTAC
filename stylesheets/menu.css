@@ -6,7 +6,7 @@
 /* line 10, ../sass/menu.scss */
 .menu {
   display: block;
-  left: -250px;
+  left: -260px;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -ms-transition-duration: 0.2s;
@@ -93,10 +93,6 @@
   left: 0px;
 }
 
-/* line 93, ../sass/menu.scss */
-#hamburger:checked ~ .menuicon {
-  left: 260px;
-}
 /* line 95, ../sass/menu.scss */
 #hamburger:checked ~ .menuicon span {
   background-color: transparent;

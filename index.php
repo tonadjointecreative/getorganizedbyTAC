@@ -8,7 +8,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Asana | <?php echo count($today) ?> tasks for Today!</title>
+    <title>Asana | <?php echo count($today) ?> tasks Today</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,200" rel="stylesheet">
@@ -43,6 +43,7 @@
                 echo '<li class="workspace"><a target="_blank" href="https://app.asana.com/0/'.idToURL($workspace['id']).'/list">'.$workspace['name'].'</a></li>';
             }?>    
         </ul>
+        <label class="show-completed"><input type="checkbox" value=""> Show completed today</label>
     </div>
     
     <!-- Task lists -->
@@ -55,6 +56,9 @@
                         <?php foreach ($today as $task) {
                             display($task, $workspaces, $projects);
                         }?>
+                        <?php foreach ($today_completed as $task) {
+                            display($task, $workspaces, $projects);
+                        }?>
                     </ul>
                 </div>
                 <div class="column col-md-3 col-sm-6">
@@ -63,6 +67,10 @@
                         <?php foreach ($upcoming as $task) {
                             display($task, $workspaces, $projects);
                         }?>
+                        <?php foreach ($upcoming_completed as $task) {
+                            display($task, $workspaces, $projects);
+                        }?>
+
                     </ul>
                 </div>
                 <div class="column col-md-3 col-sm-6">
@@ -71,6 +79,10 @@
                         <?php foreach ($later as $task) {
                             display($task, $workspaces, $projects);
                         }?>
+                        <?php foreach ($later_completed as $task) {
+                            display($task, $workspaces, $projects);
+                        }?>
+
                     </ul>
                 </div>
                 <div class="column col-md-3 col-sm-6">
@@ -79,6 +91,10 @@
                         <?php foreach ($inbox as $task) {
                             display($task, $workspaces, $projects);
                         }?>
+                        <?php foreach ($inbox_completed as $task) {
+                            display($task, $workspaces, $projects);
+                        }?>
+
                     </ul>                
                 </div>
             </div>
@@ -86,7 +102,43 @@
     </div>
 
     <!-- Hire me! ;) -->
-    <footer><a href="http://www.sefrijn.nl">created by sefrijn.nl</a></footer>
+    <footer>
+        <div class="container">
+            <div class="row new-task-form">
+                <div class="form-group">
+                    <div class="col-lg-3 workspace">
+                        <!-- Workspace -->
+                        <label for="workspace-sel">Workspace:</label>
+                        <select class="form-control" id="workspace-sel">
+                            <?php foreach ($workspaces as $workspace) {
+                                echo '<option value="'.$workspace['id'].'">'.$workspace['name'].'</option>';
+                            }?>
+                        </select>                        
+                    </div>
+                    <div class="col-lg-3 project">
+                        <!-- Project -->
+                        <label for="project-sel">Project:</label>
+                        <select class="form-control" id="project-sel">
+                        </select>
+                    </div>
+                    <div class="col-lg-3 title">
+                        <!-- Title -->
+                        <label for="title-sel">Title:</label>                    
+                        <input id="title-sel" type="text" name="title" value="">
+                    </div>
+                    <div class="col-lg-3 assignee">
+                        <!-- Assignee -->
+                        <label for="assignee-sel">Assignee:</label>
+                        <select class="form-control grey" id="assignee-sel">
+                        </select>
+                        <a class="btn btn-info new-task">Create</a>
+                    </div>
+                </div>
+            </div>    
+
+            <a href="http://www.sefrijn.nl">created by sefrijn.nl</a>
+        </div>
+    </footer>
 
 </body>
 </html>

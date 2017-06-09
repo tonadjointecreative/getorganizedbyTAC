@@ -9,7 +9,6 @@ function logc( $data ) {
 }
 
 // Print date nice
-date_default_timezone_set('Europe/Amsterdam');
 function get_nice_date($timestamp) {
 
     $date = date('Ymd', strtotime($timestamp));

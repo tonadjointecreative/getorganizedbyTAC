@@ -6,14 +6,25 @@ function display( $task, $workspaces, $projects ){
     $project = array_search($task['projects'][0]['id'],array_column($projects,'id'));
     $project_color = $projects[$project]['color'];
     $name = $task['name'];
+    $completed = "";
     if($name == ""){
         $name = "** empty title **";
     }        
     if($project_color == ""){
         $project_color = "default-color";
     }
-    echo '<li data-id="'.$task['id'].'" class="todo-item">';
-    echo '<a class="name" target="_blank" href="https://app.asana.com/0/'.$projects[$project]['id'].'/'.$task['id'].'">'.$name.'</a><br>';
+    if($task['completed']){
+        $completed = " completed";
+    }
+    echo '<li data-id="'.$task['id'].'" class="todo-item'.$completed.'">';
+
+    
+    if($task['projects'] == null){
+        echo '<a class="name" target="_blank" href="https://app.asana.com/0/'.idToURL($task['workspace']['id']).'/'.$task['id'].'">'.$name.'</a><br>';
+    }else{
+        echo '<a class="name" target="_blank" href="https://app.asana.com/0/'.$projects[$project]['id'].'/'.$task['id'].'">'.$name.'</a><br>';
+    }
+
     if($task['projects'] == null){
         echo '<a class="project default-color" target="_blank" href="https://app.asana.com/0/'.idToURL($task['workspace']['id']).'/list">No project</a>';
     }else{
@@ -22,7 +33,8 @@ function display( $task, $workspaces, $projects ){
     echo '<a class="workspace" target="_blank" href="https://app.asana.com/0/'.idToURL($task['workspace']['id']).'/list">'.$workspaces[$workspace]['name'].'</a>';
     if($task['due_on'] != ""){
         get_nice_date($task['due_on']);
-    }        
+    }
+    echo '<div class="icon" data-toggle="tooltip" data-placement="left" title="Click to complete task"><svg class="CheckIcon" title="CheckIcon" viewBox="0 0 32 32"><polygon points="27.672,4.786 10.901,21.557 4.328,14.984 1.5,17.812 10.901,27.214 30.5,7.615 "></polygon></svg></div>'; 
     echo '</li>';
 }
 

@@ -9,7 +9,7 @@ $hamburgerColor: #ddd;
 
 .menu {
   display: block;
-  left: -250px;
+  left: -260px;
   -webkit-transition-duration: $animationDuration;
   -moz-transition-duration: $animationDuration;
   -ms-transition-duration: $animationDuration;
@@ -91,7 +91,7 @@ $hamburgerColor: #ddd;
 }
 
 #hamburger:checked ~ .menuicon {
-  left:260px;
+  // left:260px;
   span {
     background-color: rgba(0,0,0,0);
     &::before, &::after {
