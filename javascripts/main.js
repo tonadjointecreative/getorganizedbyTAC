@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $('.loader').hide();
+
     $('[data-toggle="tooltip"]').tooltip({delay: { "show": 1000, "hide": 200 }});
 
     dragula([today,upcoming,later,inbox]).on('drop', function (el,container) {
@@ -66,8 +68,20 @@ $(document).ready(function(){
                 
                 $('#assignee-sel').empty();
                 $('#assignee-sel').append("<option value=\"\">Select Assignee</option>");
-                for(var i = 0;i<data.data.length;i++){
-                    $('#assignee-sel').append($("<option></option>").attr("value",data.data[i].id).text(data.data[i].name)); 
+                if(data.data.length == 0){
+
+                    $.ajax({
+                        url: 'getme.php',
+                        type: "GET",
+                        dataType: 'json',
+                        success: function(data){
+                            $('#assignee-sel').append($("<option></option>").attr("value",data.data.id).text(data.data.name));
+                        }
+                    }); 
+                }else{
+                    for(var i = 0;i<data.data.length;i++){
+                        $('#assignee-sel').append($("<option></option>").attr("value",data.data[i].id).text(data.data[i].name)); 
+                    }                    
                 }
             }
         });
@@ -93,33 +107,45 @@ $(document).ready(function(){
         }
     });
 
-    $('.new-task').click(function(){
+    $('.new-task').click(function(event){
+        event.preventDefault();
         var workspace = $('#workspace-sel').val();
         var project = $('#project-sel').val();
         var assignee = $('#assignee-sel').val();
         var title = $('#title-sel').val();
-        $('.todo-list#inbox li').removeClass('new');
-        $.ajax({
-            url: 'new.php',
-            type: "POST",
-            dataType: 'json',
-            data: {workspace: workspace,project: project, assignee: assignee, title: title},
-            success: function(data){
-                console.log(data);
-                var id = data.data.id;
-                $.ajax({
-                    url: 'update-inbox.php',
-                    type: "GET",
-                    success: function(data){
-                        $('.todo-list#inbox').html(data);
-                        $('.todo-list#inbox').find("[data-id='" + id + "']").addClass("new");
-                    }
-                }); 
+        if(title != ""){
+            $('.title label').text('Label:');
+            $('.form-group .title').removeClass('has-error has-feedback');            
+            $('.new-task').hide();
+            $('.loader').show();
+            $('#title-sel').val("");
+            $('.todo-list#inbox li').removeClass('new');            
+            $.ajax({
+                url: 'new.php',
+                type: "POST",
+                dataType: 'json',
+                data: {workspace: workspace,project: project, assignee: assignee, title: title},
+                success: function(data){
+                    console.log(data);
+                    var id = data.data.id;
+                    $.ajax({
+                        url: 'update-inbox.php',
+                        type: "GET",
+                        success: function(data){
+                            $('.todo-list#inbox').html(data);
+                            $('.todo-list#inbox').find("[data-id='" + id + "']").addClass("new");
+                            $('.new-task').show();
+                            $('.loader').hide();
 
-
-            }
-        });
-            
+                        }
+                    });
+                }
+            });
+        }else{
+            $('.title label').text('Label (not empty!):');            
+            $('.form-group .title').addClass('has-error has-feedback');
+            console.log("title is empty");
+        } 
     });
 
     init();    

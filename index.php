@@ -45,7 +45,7 @@
         </ul>
         <label class="show-completed"><input type="checkbox" value=""> Show completed today</label>
     </div>
-    
+
     <!-- Task lists -->
     <div class="wrapper">
         <div class="container">
@@ -124,14 +124,20 @@
                     <div class="col-lg-3 title">
                         <!-- Title -->
                         <label for="title-sel">Title:</label>                    
-                        <input id="title-sel" type="text" name="title" value="">
+                        <input id="title-sel" class="form-control" type="text" name="title" value="">
                     </div>
                     <div class="col-lg-3 assignee">
                         <!-- Assignee -->
                         <label for="assignee-sel">Assignee:</label>
                         <select class="form-control grey" id="assignee-sel">
                         </select>
-                        <a class="btn btn-info new-task">Create</a>
+                        <a href="create" class="btn btn-info new-task">Create</a>
+                        <!-- Loader -->
+                        <div class="btn btn-info spinner loader">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>                        
                     </div>
                 </div>
             </div>    
