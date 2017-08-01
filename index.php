@@ -1,4 +1,5 @@
 <?php 
+    define('SAFEASANA', 1);
     include('config.php');
     include('curl.php');
     include('helper.php');
@@ -8,6 +9,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+
+    <!-- Mobile tags -->
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="480">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no"> 
+
     <title>Asana | <?php echo count($today) ?> tasks Today</title>
 
     <!-- Fonts -->
@@ -23,11 +30,18 @@
     <!-- Dragula - Drag n Drop -->
     <script src="javascripts/dragula.min.js"></script>
 
-    <!-- Init Dragula in a script -->
+    <!-- Flickity -->
+    <script src="javascripts/flickity.pkgd.min.js"></script>
+
+    <!-- Init Dragula and Flickity in a script -->
     <script src="javascripts/main.js"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="stylesheets/screen.css"> 
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">    
+
 </head>
 
 <body>
@@ -46,10 +60,16 @@
         <label class="show-completed"><input type="checkbox" value=""> Show completed today</label>
     </div>
 
+
+    <!-- Create task toggle -->
+    <div id="createbutton">
+        <a class="btn btn-info toggle-task"><span>+</span></a>
+    </div>
+
     <!-- Task lists -->
     <div class="wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row row-tasks">
                 <div class="column col-md-3 col-sm-6">
                     <h2 class="list-title">Today</h2>
                     <ul id="today" class="todo-list">

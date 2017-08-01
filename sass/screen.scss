@@ -7,6 +7,7 @@
 @import url("asana.css");				// Asana colors
 @import url("asana_new_colors.css");	// Asana new colors (incomplete)
 @import url("menu.css");				// Menu button CSS
+@import url("flickity.css");
 @import "compass/css3";
 
 body,p,ul,li,a{
@@ -24,16 +25,58 @@ li,ul{
 	margin:0;
 	padding:0;
 }
+div{
+	outline: none;
+}
 a:hover{
 	cursor:pointer;            
 }
-
+#createbutton{
+	position:fixed;
+	top:20px;
+	right:15px;
+	// height:50px;
+	z-index: 14;
+	font-size:40px;
+	a.btn{
+		padding:0 7px;
+		font-size:38px;
+		font-weight: 200;
+		line-height: 0.8;
+		span{
+			@include transition(all 0.3s);
+			display: inline-block;
+		}
+	}
+}
+.flickity-page-dots{
+	bottom: inherit;
+    top: 32px;
+    position: fixed;
+}
+.flickity-prev-next-button{
+    position: fixed;
+    bottom: 2px;
+    top:inherit;
+    width: 28px;
+    height: 28px;
+    background-color:rgba(240,240,240,0.4);
+}
+.flickity-prev-next-button.next{
+	right:15px;
+}
+.flickity-prev-next-button.prev{
+	left:15px;
+}
 #sidebar{
 	position:fixed;
 	padding:0 15px 0 50px;
 	top:0;
 	bottom:0;
 	width:260px;
+	@media only screen and (max-width: 767px) {
+		width:100%;
+	}
 	background-color:#222;
 	color:#ddd;
 	z-index:15;
@@ -59,13 +102,17 @@ a:hover{
 	}
 }
 
-.row{
+.row-tasks{
 	@media only screen and (max-width: 767px) {
 		margin-top: 50px;
 	}
 	.column{
-		position:relative;
 		border-right: 1px dotted #e2e2e2;
+		position:relative;
+		@media only screen and (max-width: 767px) {
+			width:100%;
+			border-right:none;
+		}
 	}
 }
 
@@ -194,13 +241,20 @@ a:hover{
 
 footer{
 	position:fixed;
-	bottom:0;
+	top:0;
 	width:100%;
 	text-align:center;
 	background-color:#f3f3f3;
-	// border-top:1px solid #e2e2e2;
 	margin:0;
 	padding:0;
+	padding-top: 6px;
+	display: none;
+	z-index:13;
+	@media (max-width: 767px) {
+		padding-top: 25%;
+		bottom:0;
+	}
+
 	a{
 		display: inline-block;
 		font-size:11px;
@@ -219,6 +273,11 @@ footer{
 			letter-spacing: 2px;
 			font-size:13px;
 			text-transform: uppercase;
+			margin-bottom: 12px;
+			@media only screen and (max-width: 767px) {	
+				margin-top:12px;
+				margin-bottom: 6px;
+			}
 		}
 		text-align: left;
 		padding:20px 0;
@@ -241,6 +300,11 @@ footer{
 
 .btn.new-task{
 	width:100px;
+	@media only screen and (max-width: 767px) {	
+	    position: relative;
+		top: -1px;
+		width:35%;
+	}
 }
 
 .loader{

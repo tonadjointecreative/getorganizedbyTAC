@@ -19,6 +19,7 @@ function get_nice_date($timestamp) {
     } 
     else if($date == date('Ymd',time() - (24 * 60 * 60))) {
       $date = 'Yesterday';
+      $class = ' red';
     }
     else if($date == date('Ymd',time() + (24 * 60 * 60))) {
       $date = 'Tomorrow';

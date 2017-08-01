@@ -3,18 +3,51 @@ $(document).ready(function(){
 
     $('[data-toggle="tooltip"]').tooltip({delay: { "show": 1000, "hide": 200 }});
 
-    dragula([today,upcoming,later,inbox]).on('drop', function (el,container) {
-        var id = $(el).data('id');
-        var assignee_status = $(container).attr("id");
-        $.ajax({
-           url: 'update.php',
-           type: "POST",
-           data: {id: id, assignee_status: assignee_status},
-           success: function(data){
-               console.log(data);
-                document.title = "Asana | "+$('#today li').not('.completed').length+" tasks Today";
-           }
-       });               
+    var isFlickity = false;
+    var isDragula = false;
+    var drake;
+
+    function initFlickity(){
+        if($(document).width() < 767){
+            if(!isFlickity){
+                $('.row-tasks').flickity({
+                    // options
+                    cellAlign: 'left',
+                    contain: true
+                });
+                isFlickity = true;                
+            }
+            if(isDragula){
+               drake.destroy();
+               isDragula = false;             
+            }
+        }else{
+            if(!isDragula){
+                drake = dragula([today,upcoming,later,inbox]).on('drop', function (el,container) {
+                    var id = $(el).data('id');
+                    var assignee_status = $(container).attr("id");
+                    $.ajax({
+                       url: 'update.php',
+                       type: "POST",
+                       data: {id: id, assignee_status: assignee_status},
+                       success: function(data){
+                           console.log(data);
+                            document.title = "Asana | "+$('#today li').not('.completed').length+" tasks Today";
+                       }
+                   });               
+                });
+                isDragula = true;
+            }
+            if(isFlickity){
+                $('.row-tasks').flickity('destroy');
+                isFlickity = false;                
+            }
+        }
+
+    }
+    initFlickity();
+    $(window).resize(function(){
+        initFlickity();
     });
 
     $('.icon').click(function(){
@@ -30,6 +63,19 @@ $(document).ready(function(){
         });
         document.title = "Asana | "+$('#today li').not('.completed').length+" tasks Today";
     });
+
+    $('.toggle-task').click(function(){
+        $('footer').slideToggle("fast",function(){
+            var degrees;
+            if($('footer').is(':visible')){
+                degrees = 45;
+            }else{
+                degrees = 0;
+            }
+            console.log(degrees);
+            $('.toggle-task span').css({'transform' : 'rotate('+ degrees +'deg)'});
+        });
+    });    
 
     $('.show-completed').children().click(function() {
         var elem = $(this);

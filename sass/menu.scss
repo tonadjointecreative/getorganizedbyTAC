@@ -10,6 +10,10 @@ $hamburgerColor: #ddd;
 .menu {
   display: block;
   left: -260px;
+  @media only screen and (max-width: 767px) {
+    left:-100%;
+  }
+
   -webkit-transition-duration: $animationDuration;
   -moz-transition-duration: $animationDuration;
   -ms-transition-duration: $animationDuration;
