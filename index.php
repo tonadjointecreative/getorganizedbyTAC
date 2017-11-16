@@ -162,7 +162,7 @@
                 </div>
             </div>    
 
-            <a href="http://www.sefrijn.nl">created by sefrijn.nl</a>
+            <a href="http://www.howaboutyes.com">created by How About Yes</a>
         </div>
     </footer>
 

@@ -1,4 +1,5 @@
 <?php 
+define('SAFEASANA', 1);
 include('config.php');
 
 $task_id = $_POST['id'];

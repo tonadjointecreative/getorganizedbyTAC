@@ -1,4 +1,5 @@
 <?php 
+define('SAFEASANA', 1);
 include('config.php');
 
 $workspace = $_POST['workspace'];

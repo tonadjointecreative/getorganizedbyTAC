@@ -241,18 +241,19 @@ a:hover{
 
 footer{
 	position:fixed;
-	top:0;
+	bottom:0;
 	width:100%;
 	text-align:center;
 	background-color:#f3f3f3;
 	margin:0;
 	padding:0;
 	padding-top: 6px;
-	display: none;
+	display: block;
 	z-index:13;
-	@media (max-width: 767px) {
-		padding-top: 25%;
-		bottom:0;
+	@media only screen and (max-width: 767px) {	
+		display: none;
+		padding-top: 50px;
+		top:0;
 	}
 
 	a{

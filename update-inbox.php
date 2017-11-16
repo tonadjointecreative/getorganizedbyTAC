@@ -1,5 +1,5 @@
 <?php 
-
+define('SAFEASANA', 1);
 include('config.php');
 
 // Set timezone

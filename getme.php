@@ -1,4 +1,5 @@
 <?php 
+define('SAFEASANA', 1);
 include('config.php');
 
 $query = "https://app.asana.com/api/1.0/users/me";

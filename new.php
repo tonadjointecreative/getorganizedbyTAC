@@ -1,7 +1,6 @@
 <?php 
-// if(!function_exists('idToURL')){
-    include('config.php');
-// }
+define('SAFEASANA', 1);
+include('config.php');
 
 $workspace = $_POST['workspace'];
 $project = $_POST['project'];
