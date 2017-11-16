@@ -1,6 +1,6 @@
 ## About
 
-A basic plugin for Asana to load all tasks you are assigned to accross **all workspaces**. Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
+A basic app for Asana to load all tasks you are assigned to accross **all workspaces**. Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
 
 ### Screenshot
 ![A screenshot of the interface](screenshot.png?raw=true)
@@ -13,10 +13,14 @@ A basic plugin for Asana to load all tasks you are assigned to accross **all wor
 - Click on tasks and it will open the task in Asana
 - You can even add new tasks in the bottom
 - The sidebar provides links to all your Asana workspaces.
+- See it all, stay focussed. Yay!
+
 
 ### What I still would like to improve:
-- Linking to a task within a project works just fine. But linking to a task that does not belong to a project or to the workspace overview ‘My Tasks’ page is not so easy. For some reason the workspace ID returned by the Asana API cannot be used for the workspace URL. So I coded these links manually in my code in the config file… See also github for more info on this. Not a big problem.
+- Linking to a task within a project works just fine. But linking to a task that does not belong to a project or to the workspace overview ‘My Tasks’ page is not so easy. For some reason the workspace ID returned by the Asana API cannot be used for the workspace URL. So I coded these links manually in my code in the config file…
 - Mobile… I tried also to make it look nice on mobile, yet this part is still a bit buggy. Just needs some love.
+- Authentication. Using an access token makes it not safe to use online (or somebody else could complete your tasks, haha). So right now I host it locally. But it would be nice to include proper authentication.
+
 
 ## Installation
 
@@ -26,13 +30,8 @@ A basic plugin for Asana to load all tasks you are assigned to accross **all wor
 
 3. (optional) Expand config.php with workspace ID - URLs conversion to be able to use quick links to workspaces (see config.php comments for more info)
 
-4. Upload to a server or host locally
+4. Host locally (or online, but beware! Someone else can update your TODO list...)
 
-## Usage
-
-View all your tasks! Get productive. Yay!
-
-You can even drag and drop your tasks in different columns. They will be synchronised with Asana.
 
 ## API
 
