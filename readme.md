@@ -2,6 +2,9 @@
 
 A basic plugin for Asana to load all tasks you are assigned to accross **all workspaces**. Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
 
+## Screenshot
+![A screenshot of the interface](screenshot.png?raw=true)
+
 ## Installation
 
 1. Get an API key by [first logging in to Asana](https://app.asana.com). In the topright click on your workspace name > My Profile Settings > Apps > Manage Developer Apps. Create your Personal Access Token.
