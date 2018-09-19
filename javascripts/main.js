@@ -7,6 +7,56 @@ $(document).ready(function(){
     var isDragula = false;
     var drake;
 
+
+    $(document).mouseup(function(e) 
+    {
+        var container = $(".todo-item");
+
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            container.removeClass('selected');
+        }
+    });
+
+
+    function initMobileChange(){
+        if($(document).width() < 767){
+            $('.todo-item').click(function(){
+                if(!$(this).hasClass('selected')){
+                    $('.todo-item').removeClass('selected');
+                    $(this).addClass('selected');
+                    var todo_item = $(this);
+                    var id = $(this).data("id");
+                    var assignee_status = $(this).parent().attr("id");
+                    console.log("clicked on "+id+" in list "+assignee_status);
+                    $(this).find('.mobileChange').change(function() {
+                        var assignee_status_new = $(this).val();
+                        console.log("move it to "+assignee_status_new);
+                        $.ajax({
+                           url: 'update.php',
+                           type: "POST",
+                           data: {id: id, assignee_status: assignee_status_new},
+                           success: function(data){
+                                console.log(data);
+                                document.title = "Asana | "+$('#today li').not('.completed').length+" tasks Today";
+                                $(todo_item).appendTo('#'+assignee_status_new);
+                           }
+                        });  
+                    });                 
+
+
+                }else{
+                    $(this).removeClass('selected');
+                }
+            }).find('.mobileChange').click(function(e){
+                return false;
+            });
+        }
+
+    }
+    initMobileChange();
+
     function initFlickity(){
         if($(document).width() < 767){
             if(!isFlickity){

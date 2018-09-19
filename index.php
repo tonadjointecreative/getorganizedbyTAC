@@ -13,6 +13,7 @@
     <!-- Mobile tags -->
     <meta name="HandheldFriendly" content="true">
     <meta name="MobileOptimized" content="480">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no"> 
 
     <title>Asana | <?php echo count($today) ?> tasks Today</title>
@@ -40,11 +41,16 @@
     <link rel="stylesheet" href="stylesheets/screen.css"> 
 
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">    
+    <link rel="apple-touch-icon" href="favicon-ios.png">    
 
 </head>
 
 <body>
+    <!-- Browsersync -->
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+    
     <!-- Navigation to Workspaces-->
     <input type="checkbox" id="hamburger"/>
     <label class="menuicon" for="hamburger">

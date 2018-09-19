@@ -13,34 +13,57 @@ body, p, ul, li, a {
 }
 
 /* line 16, ../sass/screen.scss */
-body {
-  margin-bottom: 30px;
+html {
+  width: 100% !important;
 }
 
 /* line 19, ../sass/screen.scss */
+body {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 19, ../sass/screen.scss */
+  body {
+    width: 100% !important;
+  }
+  /* line 23, ../sass/screen.scss */
+  body .wrapper {
+    width: 100% !important;
+  }
+  /* line 25, ../sass/screen.scss */
+  body .wrapper > .container {
+    width: 100%;
+  }
+  /* line 27, ../sass/screen.scss */
+  body .wrapper > .container > .row {
+    width: calc(100% + 30px);
+  }
+}
+
+/* line 34, ../sass/screen.scss */
 h1, h2, h3, h4 {
   font-weight: 200;
   margin-bottom: 30px;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 li, ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 div {
   outline: none;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 #createbutton {
   position: fixed;
   top: 20px;
@@ -48,14 +71,14 @@ a:hover {
   z-index: 14;
   font-size: 40px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 #createbutton a.btn {
   padding: 0 7px;
   font-size: 38px;
   font-weight: 200;
   line-height: 0.8;
 }
-/* line 46, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 #createbutton a.btn span {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -64,14 +87,14 @@ a:hover {
   display: inline-block;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .flickity-page-dots {
   bottom: inherit;
   top: 32px;
   position: fixed;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .flickity-prev-next-button {
   position: fixed;
   bottom: 2px;
@@ -81,17 +104,17 @@ a:hover {
   background-color: rgba(240, 240, 240, 0.4);
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .flickity-prev-next-button.next {
   right: 15px;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .flickity-prev-next-button.prev {
   left: 15px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #sidebar {
   position: fixed;
   padding: 0 15px 0 50px;
@@ -103,60 +126,60 @@ a:hover {
   z-index: 15;
 }
 @media only screen and (max-width: 767px) {
-  /* line 71, ../sass/screen.scss */
+  /* line 86, ../sass/screen.scss */
   #sidebar {
     width: 100%;
   }
 }
-/* line 84, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace {
   margin-bottom: 10px;
 }
-/* line 86, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace a {
   font-size: 16px;
   color: #ddd;
 }
-/* line 91, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #sidebar .workspaces-list .workspace:hover a {
   color: #fff;
 }
-/* line 97, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 #sidebar .show-completed {
   margin-top: 20px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #sidebar .show-completed:hover {
   text-decoration: underline;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 105, ../sass/screen.scss */
+  /* line 120, ../sass/screen.scss */
   .row-tasks {
     margin-top: 50px;
   }
 }
-/* line 109, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .row-tasks .column {
   border-right: 1px dotted #e2e2e2;
   position: relative;
 }
 @media only screen and (max-width: 767px) {
-  /* line 109, ../sass/screen.scss */
+  /* line 124, ../sass/screen.scss */
   .row-tasks .column {
     width: 100%;
     border-right: none;
   }
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .list-title {
   background-color: white;
   margin: 0 0 0 -15px;
   padding: 20px 0 20px 15px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 134, ../sass/screen.scss */
   .list-title {
     position: fixed;
     top: 0;
@@ -173,42 +196,64 @@ a:hover {
     background-color: white;
   }
 }
-/* line 137, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .todo-list {
   margin-bottom: 127px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 137, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   .todo-list {
     min-height: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 137, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   .todo-list {
     min-height: calc(100% - 73px);
     margin-top: 73px;
   }
 }
-/* line 146, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .todo-list .new {
   background-color: white;
   animation-name: new-item;
   animation-duration: 2s;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .todo-item {
   position: relative;
   margin: 0 -15px 0px;
   padding: 10px 15px 15px;
   border-top: 1px dotted #e2e2e2;
 }
-/* line 158, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .todo-item:first-of-type {
   border-top: none;
 }
-/* line 161, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
+.todo-item.selected {
+  background-color: #eee;
+}
+/* line 178, ../sass/screen.scss */
+.todo-item.selected .icon {
+  display: block;
+}
+/* line 180, ../sass/screen.scss */
+.todo-item.selected .icon:hover {
+  border-color: #62d26f;
+  box-shadow: 0px 0px 5px 1px rgba(98, 210, 111, 0.5);
+}
+/* line 183, ../sass/screen.scss */
+.todo-item.selected .icon:hover svg {
+  fill: #62d26f;
+}
+/* line 188, ../sass/screen.scss */
+.todo-item.selected .mobileChange {
+  display: block;
+  margin-top: 10px;
+}
+/* line 193, ../sass/screen.scss */
 .todo-item .icon {
   display: none;
   position: absolute;
@@ -222,89 +267,96 @@ a:hover {
   cursor: pointer;
   background-color: #eee;
 }
-/* line 173, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .todo-item .icon svg {
   fill: #bbb;
 }
-/* line 177, ../sass/screen.scss */
-.todo-item:hover {
-  background-color: #eee;
-  cursor: move;
+@media only screen and (min-width: 768px) {
+  /* line 209, ../sass/screen.scss */
+  .todo-item:hover {
+    background-color: #eee;
+    cursor: move;
+  }
+  /* line 213, ../sass/screen.scss */
+  .todo-item:hover .icon {
+    display: block;
+  }
+  /* line 215, ../sass/screen.scss */
+  .todo-item:hover .icon:hover {
+    border-color: #62d26f;
+    box-shadow: 0px 0px 5px 1px rgba(98, 210, 111, 0.5);
+  }
+  /* line 218, ../sass/screen.scss */
+  .todo-item:hover .icon:hover svg {
+    fill: #62d26f;
+  }
 }
-/* line 180, ../sass/screen.scss */
-.todo-item:hover .icon {
-  display: block;
+/* line 227, ../sass/screen.scss */
+.todo-item .mobileChange {
+  display: none;
 }
-/* line 182, ../sass/screen.scss */
-.todo-item:hover .icon:hover {
-  border-color: #62d26f;
-  box-shadow: 0px 0px 5px 1px rgba(98, 210, 111, 0.5);
-}
-/* line 185, ../sass/screen.scss */
-.todo-item:hover .icon:hover svg {
-  fill: #62d26f;
-}
-/* line 192, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .todo-item.completed {
   display: none;
   background-color: #d4ffd8;
   opacity: 0.5;
 }
-/* line 196, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .todo-item.completed .icon {
   display: none;
 }
-/* line 199, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .todo-item.completed .name {
   text-decoration: line-through;
 }
-/* line 203, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .todo-item .date {
   color: #aaa;
   display: inline;
   font-size: 11px;
 }
-/* line 207, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .todo-item .date.green {
   color: #37C597;
 }
-/* line 210, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .todo-item .date.red {
   color: #FC636B;
 }
-/* line 213, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .todo-item .date.blue {
   color: #80E6FF;
 }
-/* line 217, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .todo-item .project, .todo-item .workspace {
   padding: 0.1em 0.7em;
   border-radius: 10px;
   font-size: 11px;
 }
-/* line 221, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .todo-item .project:hover, .todo-item .workspace:hover {
   color: white;
   background-color: black;
   text-decoration: none;
 }
-/* line 227, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .todo-item .workspace {
   color: #aaa;
 }
-/* line 230, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .todo-item .default-color {
   background-color: #ddd;
   color: #333;
 }
-/* line 234, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .todo-item .name {
-  margin: 0;
+  margin: 0 0 6px;
   font-size: 16px;
+  display: table;
   color: #222;
 }
 
-/* line 242, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 footer {
   position: fixed;
   bottom: 0;
@@ -318,14 +370,14 @@ footer {
   z-index: 13;
 }
 @media only screen and (max-width: 767px) {
-  /* line 242, ../sass/screen.scss */
+  /* line 281, ../sass/screen.scss */
   footer {
     display: none;
     padding-top: 50px;
     top: 0;
   }
 }
-/* line 259, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 footer a {
   display: inline-block;
   font-size: 11px;
@@ -334,16 +386,16 @@ footer a {
   letter-spacing: 2px;
   color: #ccc;
 }
-/* line 266, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 footer a:hover {
   color: #FC636B;
 }
-/* line 270, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 footer .new-task-form {
   text-align: left;
   padding: 20px 0;
 }
-/* line 271, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 footer .new-task-form label {
   display: block;
   color: #bbb;
@@ -353,34 +405,34 @@ footer .new-task-form label {
   margin-bottom: 12px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 271, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   footer .new-task-form label {
     margin-top: 12px;
     margin-bottom: 6px;
   }
 }
-/* line 285, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 footer .new-task-form input {
   display: block;
   width: 100%;
   height: 34px;
 }
-/* line 290, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 footer .new-task-form #assignee-sel.grey {
   color: #bbb;
 }
-/* line 293, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 footer .new-task-form #assignee-sel {
   width: 60%;
   display: inline-block;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .btn.new-task {
   width: 100px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 302, ../sass/screen.scss */
+  /* line 341, ../sass/screen.scss */
   .btn.new-task {
     position: relative;
     top: -1px;
@@ -388,19 +440,19 @@ footer .new-task-form #assignee-sel {
   }
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .loader {
   display: inline-block;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .spinner {
   margin: 0;
   width: 100px;
   text-align: center;
 }
 
-/* line 322, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .spinner > div {
   width: 10px;
   height: 10px;
@@ -411,13 +463,13 @@ footer .new-task-form #assignee-sel {
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-/* line 333, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .spinner .bounce1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
