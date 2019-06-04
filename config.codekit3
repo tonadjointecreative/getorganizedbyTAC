@@ -1,5 +1,5 @@
 {
-"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
 "buildSteps": [
 	{
 		"name": "Process All Remaining Files and Folders",
@@ -7,403 +7,467 @@
 		"uuidString": "0DE50FEF-39A2-409B-A3B9-4F56C0B369A3"
 		}
 	],
-"creatorBuild": "26680",
+"creatorBuild": "29156",
 "files": {
-	"\/.gitignore": {
+	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.gitignore",
+		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_animation.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_animation.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_animation.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_animation.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_appearance.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_appearance.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_appearance.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_appearance.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-clip.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-clip.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-clip.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-clip.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-origin.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-origin.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-origin.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-origin.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-size.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-size.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_background-size.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_background-size.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_border-radius.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_border-radius.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_border-radius.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_border-radius.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_box-shadow.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_box-shadow.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_box-shadow.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_box-shadow.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_box-sizing.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_box-sizing.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_box-sizing.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_box-sizing.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_columns.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_columns.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_columns.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_columns.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_filter.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_filter.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_filter.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_filter.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_flexbox.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_flexbox.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_flexbox.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_flexbox.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_font-face.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_font-face.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_font-face.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_font-face.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_hyphenation.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_hyphenation.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_hyphenation.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_hyphenation.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_images.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_images.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_images.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_images.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_inline-block.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_inline-block.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_inline-block.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_inline-block.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_opacity.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_opacity.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_opacity.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_opacity.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_regions.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_regions.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_regions.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_regions.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_text-shadow.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_text-shadow.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_text-shadow.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_text-shadow.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_transform.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_transform.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_transform.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_transform.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_transition.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_transition.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_transition.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_transition.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_user-interface.scssc": {
+	"/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_user-interface.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/16808eeb676483c32aaea1a318be814760dec572\/_user-interface.scssc",
+		"oAP": "/.sass-cache/16808eeb676483c32aaea1a318be814760dec572/_user-interface.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/asana.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/asana.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/asana.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/asana.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/asana_new_colors.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/asana_new_colors.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/asana_new_colors.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/asana_new_colors.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/ie.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/ie.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/ie.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/ie.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/menu.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/menu.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/menu.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/menu.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/print.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/print.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/print.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/print.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/screen.scssc": {
+	"/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/screen.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/41b98033bff674f006fd59974ccc6b8ee6537102\/screen.scssc",
+		"oAP": "/.sass-cache/41b98033bff674f006fd59974ccc6b8ee6537102/screen.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/ie.scssc": {
+	"/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/ie.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/ie.scssc",
+		"oAP": "/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/ie.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/print.scssc": {
+	"/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/print.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/print.scssc",
+		"oAP": "/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/print.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/screen.scssc": {
+	"/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/screen.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/.sass-cache\/4c1c825086c382b5c979da1e9f395e5ee7aa14b0\/screen.scssc",
+		"oAP": "/.sass-cache/4c1c825086c382b5c979da1e9f395e5ee7aa14b0/screen.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_css3.scssc": {
+	"/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_css3.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_css3.scssc",
+		"oAP": "/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_css3.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_reset.scssc": {
+	"/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_reset.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_reset.scssc",
+		"oAP": "/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_reset.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_support.scssc": {
+	"/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_support.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/52f4b3994475627bffda6bb3f9b4ff8838336970\/_support.scssc",
+		"oAP": "/.sass-cache/52f4b3994475627bffda6bb3f9b4ff8838336970/_support.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/sefrijn\/.rvm\/gems\/ruby-2.2.1\/gems\/compass-core-1.0.3\/stylesheets\/compass\/_support.scssc": {
+	"/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/Users/sefrijn/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_support.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/75fcaf1b4852ceb732871195e41567cc2a7d8997\/Users\/sefrijn\/.rvm\/gems\/ruby-2.2.1\/gems\/compass-core-1.0.3\/stylesheets\/compass\/_support.scssc",
+		"oAP": "/.sass-cache/75fcaf1b4852ceb732871195e41567cc2a7d8997/Users/sefrijn/.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/_support.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/7fb2f0703941c274a7055c9a721f67884f8872f0\/_utilities.scssc": {
+	"/.sass-cache/7fb2f0703941c274a7055c9a721f67884f8872f0/_utilities.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/7fb2f0703941c274a7055c9a721f67884f8872f0\/_utilities.scssc",
+		"oAP": "/.sass-cache/7fb2f0703941c274a7055c9a721f67884f8872f0/_utilities.scssc",
 		"oF": 0
 		},
-	"\/.sass-cache\/e04fd4b317dfa440ef642f54d3d3a5dcdd7a7ea1\/_hacks.scssc": {
+	"/.sass-cache/e04fd4b317dfa440ef642f54d3d3a5dcdd7a7ea1/_hacks.scssc": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 1,
-		"oAP": "\/.sass-cache\/e04fd4b317dfa440ef642f54d3d3a5dcdd7a7ea1\/_hacks.scssc",
+		"oAP": "/.sass-cache/e04fd4b317dfa440ef642f54d3d3a5dcdd7a7ea1/_hacks.scssc",
 		"oF": 0
 		},
-	"\/complete.php": {
+	"/complete.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/complete.php",
+		"oAP": "/complete.php",
 		"oF": 0
 		},
-	"\/config-example.php": {
+	"/config-example.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/config-example.php",
+		"oAP": "/config-example.php",
 		"oF": 0
 		},
-	"\/config.php": {
+	"/config.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/config.php",
+		"oAP": "/config.php",
 		"oF": 0
 		},
-	"\/config.rb": {
+	"/config.rb": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/config.rb",
+		"oAP": "/config.rb",
 		"oF": 0
 		},
-	"\/curl.php": {
+	"/curl.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/curl.php",
+		"oAP": "/curl.php",
 		"oF": 0
 		},
-	"\/display.php": {
+	"/display.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/display.php",
+		"oAP": "/display.php",
 		"oF": 0
 		},
-	"\/favicon.png": {
+	"/favicon-ios.png": {
 		"ft": 32768,
-		"iS": 90005,
+		"iS": 83807,
 		"oA": 0,
-		"oAP": "\/favicon.png",
+		"oAP": "/favicon-ios.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/getassignees.php": {
+	"/favicon.png": {
+		"ft": 32768,
+		"iS": 90005,
+		"oA": 0,
+		"oAP": "/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/getassignees.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/getassignees.php",
+		"oAP": "/getassignees.php",
 		"oF": 0
 		},
-	"\/getme.php": {
+	"/getme.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/getme.php",
+		"oAP": "/getme.php",
 		"oF": 0
 		},
-	"\/getprojects.php": {
+	"/getprojects.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/getprojects.php",
+		"oAP": "/getprojects.php",
 		"oF": 0
 		},
-	"\/helper.php": {
+	"/helper.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/helper.php",
+		"oAP": "/helper.php",
 		"oF": 0
 		},
-	"\/index.php": {
+	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/index.php",
+		"oAP": "/index.php",
 		"oF": 0
 		},
-	"\/javascripts\/dragula.min.js": {
+	"/javascripts/dragula.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/javascripts\/dragula.min-min.js",
+		"oAP": "/javascripts/dragula.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/javascripts\/flickity.pkgd.min.js": {
+	"/javascripts/flickity.pkgd.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/javascripts\/flickity.pkgd.min-min.js",
+		"oAP": "/javascripts/flickity.pkgd.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/javascripts\/jquery-3.1.1.min.js": {
+	"/javascripts/jquery-3.1.1.min.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/javascripts\/jquery-3.1.1.min-min.js",
+		"oAP": "/javascripts/jquery-3.1.1.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/javascripts\/main.js": {
+	"/javascripts/main.js": {
+		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/javascripts\/main-min.js",
+		"oAP": "/javascripts/main-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/new.php": {
+	"/new.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/new.php",
+		"oAP": "/new.php",
 		"oF": 0
 		},
-	"\/readme.md": {
+	"/readme.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -411,8 +475,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/readme.html",
+		"oAP": "/readme.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -421,7 +486,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/sass\/asana.scss": {
+	"/sass/asana.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -429,12 +494,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/asana.css",
+		"oAP": "/stylesheets/asana.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/asana_new_colors.scss": {
+	"/sass/asana_new_colors.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -442,12 +507,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/asana_new_colors.css",
+		"oAP": "/stylesheets/asana_new_colors.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/ie.scss": {
+	"/sass/ie.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -455,12 +520,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/ie.css",
+		"oAP": "/stylesheets/ie.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/menu.scss": {
+	"/sass/menu.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -468,12 +533,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/menu.css",
+		"oAP": "/stylesheets/menu.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/print.scss": {
+	"/sass/print.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -481,12 +546,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/print.css",
+		"oAP": "/stylesheets/print.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/screen.scss": {
+	"/sass/screen.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -494,114 +559,116 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/screen.css",
+		"oAP": "/stylesheets/screen.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/screenshot.png": {
+	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 107000,
 		"oA": 0,
-		"oAP": "\/screenshot.png",
+		"oAP": "/screenshot.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/stylesheets\/asana.css": {
+	"/stylesheets/asana.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/asana-min.css",
+		"oAP": "/stylesheets/asana-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/asana_new_colors.css": {
+	"/stylesheets/asana_new_colors.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/asana_new_colors-min.css",
+		"oAP": "/stylesheets/asana_new_colors-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/dragula.min.css": {
+	"/stylesheets/dragula.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/dragula.min-min.css",
+		"oAP": "/stylesheets/dragula.min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/flickity.css": {
+	"/stylesheets/flickity.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/flickity-min.css",
+		"oAP": "/stylesheets/flickity-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/ie.css": {
+	"/stylesheets/ie.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/ie-min.css",
+		"oAP": "/stylesheets/ie-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/menu.css": {
+	"/stylesheets/menu.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/menu-min.css",
+		"oAP": "/stylesheets/menu-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/print.css": {
+	"/stylesheets/print.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/print-min.css",
+		"oAP": "/stylesheets/print-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/stylesheets\/screen.css": {
+	"/stylesheets/screen.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/stylesheets\/screen-min.css",
+		"oAP": "/stylesheets/screen-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/update-inbox.php": {
+	"/update-inbox.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/update-inbox.php",
+		"oAP": "/update-inbox.php",
 		"oF": 0
 		},
-	"\/update.php": {
+	"/update.php": {
 		"cB": 0,
 		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "\/update.php",
+		"oAP": "/update.php",
 		"oF": 0
 		}
 	},
@@ -621,141 +688,100 @@
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
-	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
 	"autoprefixerEnableIEGrid": 0,
+	"babel7PresetType": 1,
+	"babelAllowRCFiles": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
-	"babelConfigFileHandlingType": 0,
+	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
 	"babelPlugins": {
+		"arrow-functions": {
+			"active": 0
+			},
 		"async-generator-functions": {
 			"active": 0
 			},
 		"async-to-generator": {
 			"active": 0
 			},
-		"async-to-module-method": {
+		"block-scoped-functions": {
+			"active": 0
+			},
+		"block-scoping": {
 			"active": 0
 			},
 		"class-properties": {
 			"active": 0
 			},
+		"classes": {
+			"active": 0
+			},
+		"computed-properties": {
+			"active": 0
+			},
 		"decorators": {
 			"active": 0
 			},
-		"decorators-legacy": {
+		"destructuring": {
 			"active": 0
 			},
 		"do-expressions": {
 			"active": 0
 			},
-		"es2015-arrow-functions": {
+		"dotall-regex": {
 			"active": 0
 			},
-		"es2015-block-scoped-functions": {
-			"active": 0
-			},
-		"es2015-block-scoping": {
-			"active": 0
-			},
-		"es2015-classes": {
-			"active": 0
-			},
-		"es2015-computed-properties": {
-			"active": 0
-			},
-		"es2015-constants": {
-			"active": 0
-			},
-		"es2015-destructuring": {
-			"active": 0
-			},
-		"es2015-duplicate-keys": {
-			"active": 0
-			},
-		"es2015-for-of": {
-			"active": 0
-			},
-		"es2015-function-name": {
-			"active": 0
-			},
-		"es2015-literals": {
-			"active": 0
-			},
-		"es2015-modules-amd": {
-			"active": 0
-			},
-		"es2015-modules-commonjs": {
-			"active": 0
-			},
-		"es2015-modules-systemjs": {
-			"active": 0
-			},
-		"es2015-modules-umd": {
-			"active": 0
-			},
-		"es2015-object-super": {
-			"active": 0
-			},
-		"es2015-parameters": {
-			"active": 0
-			},
-		"es2015-shorthand-properties": {
-			"active": 0
-			},
-		"es2015-spread": {
-			"active": 0
-			},
-		"es2015-sticky-regex": {
-			"active": 0
-			},
-		"es2015-template-literals": {
-			"active": 0
-			},
-		"es2015-typeof-symbol": {
-			"active": 0
-			},
-		"es2015-unicode-regex": {
-			"active": 0
-			},
-		"es3-member-expression-literals": {
-			"active": 0
-			},
-		"es3-property-literals": {
-			"active": 0
-			},
-		"es5-property-mutators": {
-			"active": 0
-			},
-		"eval": {
+		"duplicate-keys": {
 			"active": 0
 			},
 		"exponentiation-operator": {
 			"active": 0
 			},
-		"export-extensions": {
+		"export-default-from": {
+			"active": 0
+			},
+		"export-namespace-from": {
 			"active": 0
 			},
 		"external-helpers": {
 			"active": 0
 			},
-		"flow-comments": {
+		"flow-strip-types": {
 			"active": 0
 			},
-		"flow-strip-types": {
+		"for-of": {
 			"active": 0
 			},
 		"function-bind": {
 			"active": 0
 			},
+		"function-name": {
+			"active": 0
+			},
+		"function-sent": {
+			"active": 0
+			},
+		"inline-consecutive-adds": {
+			"active": 0
+			},
 		"inline-environment-variables": {
 			"active": 0
 			},
+		"instanceof": {
+			"active": 0
+			},
 		"jscript": {
+			"active": 0
+			},
+		"literals": {
+			"active": 0
+			},
+		"logical-assignment-operators": {
 			"active": 0
 			},
 		"member-expression-literals": {
@@ -767,7 +793,58 @@
 		"minify-booleans": {
 			"active": 0
 			},
+		"minify-builtins": {
+			"active": 0
+			},
+		"minify-constant-folding": {
+			"active": 0
+			},
+		"minify-dead-code-elimination": {
+			"active": 0
+			},
+		"minify-flip-comparisons": {
+			"active": 0
+			},
+		"minify-guarded-expressions": {
+			"active": 0
+			},
+		"minify-infinity": {
+			"active": 0
+			},
+		"minify-mangle-names": {
+			"active": 0
+			},
+		"minify-numeric-literals": {
+			"active": 0
+			},
+		"minify-simplify": {
+			"active": 0
+			},
+		"minify-type-constructors": {
+			"active": 0
+			},
+		"modules-amd": {
+			"active": 0
+			},
+		"modules-commonjs": {
+			"active": 0
+			},
+		"modules-systemjs": {
+			"active": 0
+			},
+		"modules-umd": {
+			"active": 0
+			},
+		"new-target": {
+			"active": 0
+			},
 		"node-env-inline": {
+			"active": 0
+			},
+		"nullish-coalescing-operator": {
+			"active": 0
+			},
+		"numeric-separator": {
 			"active": 0
 			},
 		"object-assign": {
@@ -779,7 +856,28 @@
 		"object-set-prototype-of-to-assign": {
 			"active": 0
 			},
+		"object-super": {
+			"active": 0
+			},
+		"optional-catch-binding": {
+			"active": 0
+			},
+		"optional-chaining": {
+			"active": 0
+			},
+		"parameters": {
+			"active": 0
+			},
+		"pipeline-operator": {
+			"active": 0
+			},
+		"private-methods": {
+			"active": 0
+			},
 		"property-literals": {
+			"active": 0
+			},
+		"property-mutators": {
 			"active": 0
 			},
 		"proto-to-assign": {
@@ -809,59 +907,58 @@
 		"regenerator": {
 			"active": 0
 			},
+		"regexp-constructors": {
+			"active": 0
+			},
 		"remove-console": {
 			"active": 0
 			},
 		"remove-debugger": {
 			"active": 0
 			},
+		"remove-undefined": {
+			"active": 0
+			},
+		"reserved-words": {
+			"active": 0
+			},
 		"runtime": {
+			"active": 0
+			},
+		"shorthand-properties": {
 			"active": 0
 			},
 		"simplify-comparison-operators": {
 			"active": 0
 			},
+		"spread": {
+			"active": 0
+			},
+		"sticky-regex": {
+			"active": 0
+			},
 		"strict-mode": {
 			"active": 0
 			},
-		"syntax-async-generators": {
+		"template-literals": {
 			"active": 0
 			},
-		"syntax-class-properties": {
+		"throw-expressions": {
 			"active": 0
 			},
-		"syntax-decorators": {
-			"active": 0
-			},
-		"syntax-do-expressions": {
-			"active": 0
-			},
-		"syntax-export-extensions": {
-			"active": 0
-			},
-		"syntax-flow": {
-			"active": 0
-			},
-		"syntax-function-bind": {
-			"active": 0
-			},
-		"syntax-function-sent": {
-			"active": 0
-			},
-		"syntax-jsx": {
-			"active": 0
-			},
-		"syntax-object-rest-spread": {
-			"active": 0
-			},
-		"undeclared-variables-check": {
+		"typeof-symbol": {
 			"active": 0
 			},
 		"undefined-to-void": {
 			"active": 0
+			},
+		"unicode-property-regex": {
+			"active": 0
+			},
+		"unicode-regex": {
+			"active": 0
 			}
 		},
-	"babelPresetType": 193,
 	"babelRetainLines": 0,
 	"bowerAbbreviatedPath": "bower_components",
 	"bowerAutoCreateInfoFile": 1,
@@ -870,6 +967,7 @@
 	"bowerSaveDevDependencies": 0,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
 	"buildFolderName": "build",
 	"cleanBuild": 1,
@@ -1227,6 +1325,10 @@
 			"active": 0,
 			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
+		"max-classes-per-file": {
+			"active": 0,
+			"optionString": "1"
+			},
 		"max-depth": {
 			"active": 0,
 			"optionString": "{'max': 4}"
@@ -1238,6 +1340,10 @@
 		"max-lines": {
 			"active": 0,
 			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-lines-per-function": {
+			"active": 0,
+			"optionString": "{'max': 50, 'skipBlankLines': true, 'skipComments': true, 'IIFEs': false}"
 			},
 		"max-nested-callbacks": {
 			"active": 0,
@@ -1283,6 +1389,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-async-promise-executor": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-await-in-loop": {
 			"active": 0,
 			"optionString": ""
@@ -1301,10 +1411,6 @@
 			},
 		"no-case-declarations": {
 			"active": 1,
-			"optionString": ""
-			},
-		"no-catch-shadow": {
-			"active": 0,
 			"optionString": ""
 			},
 		"no-class-assign": {
@@ -1503,9 +1609,13 @@
 			"active": 0,
 			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
 			},
+		"no-misleading-character-class": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-mixed-operators": {
 			"active": 0,
-			"optionString": "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			"optionString": "{'groups': [['+', '-', '*', '/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
 			},
 		"no-mixed-requires": {
 			"active": 0,
@@ -1755,6 +1865,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-useless-catch": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-useless-computed-key": {
 			"active": 0,
 			"optionString": ""
@@ -1859,6 +1973,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-object-spread": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
@@ -1887,6 +2005,10 @@
 			"active": 0,
 			"optionString": "'always'"
 			},
+		"require-atomic-updates": {
+			"active": 0,
+			"optionString": ""
+			},
 		"require-await": {
 			"active": 0,
 			"optionString": ""
@@ -1894,6 +2016,10 @@
 		"require-jsdoc": {
 			"active": 0,
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-unicode-regexp": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-yield": {
 			"active": 1,
@@ -1949,7 +2075,7 @@
 			},
 		"spaced-comment": {
 			"active": 0,
-			"optionString": "'always', {'line': {'markers': ['\/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			"optionString": "'always', {'line': {'markers': ['/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
 			},
 		"strict": {
 			"active": 0,
@@ -2009,7 +2135,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http://localhost:8888",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2404,8 +2530,8 @@
 		"escapeHTMLCharacters": 0,
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
-		"outputStyle": 0,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -2423,10 +2549,11 @@
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*-min.js",
-		"autoOutputPathRelativePath": "\/min",
+		"autoOutputPathRelativePath": "/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"bundleFormat": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
@@ -2449,25 +2576,26 @@
 		"autoOutputPathReplace1": "kit",
 		"autoOutputPathReplace2": "html",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
-		"disableJavascript": 0,
+		"enableJavascript": 0,
 		"ieCompatibility": 1,
+		"mathStyle": 0,
 		"outputStyle": 0,
-		"relativeURLS": 0,
+		"rewriteURLStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"strictImports": 0,
-		"strictMath": 0,
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
@@ -2488,6 +2616,7 @@
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
 		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -2497,7 +2626,8 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -2518,12 +2648,13 @@
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
 		"outputStyle": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
@@ -2547,12 +2678,13 @@
 		"outputFormat": 0,
 		"outputStyle": 1,
 		"railsCompatible": 0,
-		"shouldRunCacheBuster": 0
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "..\/css",
+		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
@@ -2576,36 +2708,70 @@
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "\/js",
+		"autoOutputPathRelativePath": "/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
-		"jsxMode": 0,
 		"minifyOutput": 0,
 		"moduleResolutionType": 0,
 		"moduleType": 2,
-		"noImplicitAny": 0,
-		"preserveConstEnums": 0,
 		"removeComments": 0,
-		"suppressImplicitAnyIndexErrors": 0,
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
+	"tsAllowSyntheticDefaultImports": 0,
+	"tsAllowUnreachableCode": 0,
+	"tsAllowUnusedLabels": 0,
+	"tsAlwaysStrict": 0,
+	"tsDownlevelIteration": 0,
+	"tsEmitBOM": 0,
+	"tsEmitDecoratorMetadata": 0,
+	"tsESModuleInterop": 0,
+	"tsForceConsistentCasingInFileNames": 0,
+	"tsImportHelpers": 0,
+	"tsIsolatedModules": 0,
+	"tsJSXFactory": "React.createElement",
+	"tsKeyofStringsOnly": 0,
+	"tsNoEmitHelpers": 0,
+	"tsNoFallthroughCasesInSwitch": 0,
+	"tsNoImplicitAny": 0,
+	"tsNoImplicitReturns": 0,
+	"tsNoImplicitThis": 0,
+	"tsNoImplicitUseStrict": 0,
+	"tsNoLib": 0,
+	"tsNoResolve": 0,
+	"tsNoStrictGenericChecks": 0,
+	"tsNoUnusedLocals": 0,
+	"tsNoUnusedParameters": 0,
+	"tsPreserveConstEnums": 0,
+	"tsPreserveSymlinks": 0,
+	"tsResolveJsonModule": 0,
+	"tsSkipLibCheck": 0,
+	"tsStrictFunctionTypes": 0,
+	"tsStrictNullChecks": 0,
+	"tsStrictPropertyInitialization": 0,
+	"tsStripInternal": 0,
+	"tsSuppressExcessPropertyErrors": 0,
+	"tsSuppressImplicitAnyIndexErrors": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
-		"ascii-only": {
-			"active": 0,
+		"arguments": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"bare-returns": {
+		"arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"ascii_only": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -2613,23 +2779,27 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"bracketize": {
+		"booleans_as_integers": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"cascade": {
+		"braces": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"collapse_vars": {
 			"active": 1,
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"compress": {
+		"computed_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -2641,6 +2811,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"directives": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"drop_console": {
 			"active": 0,
 			"flagValue": -1
@@ -2648,6 +2822,10 @@
 		"drop_debugger": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"ecma": {
+			"active": 1,
+			"flagValue": 5
 			},
 		"eval": {
 			"active": 0,
@@ -2657,7 +2835,15 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"expression": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -2665,24 +2851,36 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"if_return": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"indent-level": {
+		"indent_level": {
 			"active": 0,
 			"flagValue": 4
 			},
-		"indent-start": {
+		"indent_start": {
 			"active": 0,
 			"flagValue": 0
 			},
-		"inline-script": {
-			"active": 0,
+		"inline": {
+			"active": 1,
+			"flagValue": 3
+			},
+		"inline_script": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"join_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"keep_classnames": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -2693,21 +2891,33 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"keep_infinity": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_quoted_props": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"mangle": {
-			"active": 1,
-			"flagValue": -1
-			},
-		"max-line-len": {
+		"max_line_len": {
 			"active": 1,
 			"flagValue": 32000
+			},
+		"module": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"negate_iife": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"passes": {
+			"active": 1,
+			"flagValue": 1
 			},
 		"properties": {
 			"active": 1,
@@ -2717,12 +2927,24 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote-keys": {
+		"quote_keys": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"screw-ie8": {
+		"quote_style": {
 			"active": 1,
+			"flagValue": 0
+			},
+		"reduce_funcs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"reduce_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"safari10": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"semicolons": {
@@ -2733,23 +2955,59 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"sort": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"space-colon": {
+		"shebang": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"support-ie8": {
-			"active": 0,
+		"side_effects": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"switches": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"toplevel": {
 			"active": 0,
 			"flagValue": -1
 			},
+		"typeofs": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_comps": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_Function": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_math": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_methods": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_undefined": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -2761,11 +3019,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"width": {
-			"active": 1,
-			"flagValue": 80
+		"webkit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wrap_iife": {
+			"active": 0,
+			"flagValue": -1
 			}
 		},
+	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$",
 	"websiteRelativeRoot": ""
 	},

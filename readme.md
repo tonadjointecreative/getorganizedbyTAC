@@ -1,3 +1,7 @@
+## Update from maker - June 2019
+
+I (the developer) am no longer maintaining this project. Feel free to use the code. Modify, expand, remove, improve as you wish. If you have any questions, just send me a message.
+
 ## About
 
 A basic app for Asana to load all tasks you are assigned to accross **all workspaces**. Asana does not provice a global 'my tasks' overview, but does offer a nice API to create this yourself ;)
