@@ -35,7 +35,7 @@ $projects = [];
 // Loop through all workspaces
 foreach ($workspaces as $i => $workspace) {
     // Get Projects
-    $query = "https://app.asana.com/api/1.0/workspaces/".$workspace['id']."/projects?opt_fields=name,id,color&archived=false";
+    $query = "https://app.asana.com/api/1.0/workspaces/".$workspace['gid']."/projects?opt_fields=name,id,color&archived=false";
     curl_setopt($ch, CURLOPT_URL, $query);
     $output = curl_exec($ch);
     $workspace_projects = json_decode($output,true);
@@ -46,7 +46,7 @@ foreach ($workspaces as $i => $workspace) {
     }
 
     // Get Tasks
-    $query = "https://app.asana.com/api/1.0/tasks?workspace=".$workspace['id']."&assignee=".$user_id."&completed_since=".date("Y-m-d")."&opt_fields=assignee_status,name,workspace,projects,due_on,completed";
+    $query = "https://app.asana.com/api/1.0/tasks?workspace=".$workspace['gid']."&assignee=".$user_id."&completed_since=".date("Y-m-d")."&opt_fields=assignee_status,name,workspace,projects,due_on,completed";
     curl_setopt($ch, CURLOPT_URL, $query);
     $output = curl_exec($ch);
     $tasks = json_decode($output,true);

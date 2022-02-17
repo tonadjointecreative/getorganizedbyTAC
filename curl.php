@@ -21,7 +21,7 @@ $workspaces = $workspaces_raw['data'];
 curl_setopt($ch, CURLOPT_URL, "https://app.asana.com/api/1.0/users/me");
 $output = curl_exec($ch);
 $user = json_decode($output,true);
-$user_id = $user['data']['id'];
+$user_id = $user['data']['gid'];
 
 // Create empty task lists
 $inbox = [];
@@ -40,7 +40,7 @@ $projects = [];
 // Loop through all workspaces
 foreach ($workspaces as $i => $workspace) {
     // Get Projects
-    $query = "https://app.asana.com/api/1.0/workspaces/".$workspace['gid']."/projects?opt_fields=name,id,color&archived=false";
+    $query = "https://app.asana.com/api/1.0/workspaces/".$workspace['gid']."/projects?opt_fields=name,gid,color&archived=false";
     curl_setopt($ch, CURLOPT_URL, $query);
     $output = curl_exec($ch);
     $workspace_projects = json_decode($output,true);
@@ -57,7 +57,7 @@ foreach ($workspaces as $i => $workspace) {
     $tasks = json_decode($output,true);
 
     // Loop through all the tasks in current workspace and add to Task lists
-    foreach ($tasks['data'] as $j => $task) {
+    foreach ($tasks['data'] = [] as $j => $task) {
         $a = $task['assignee_status'];
         $c = $task['completed'];
         if($a == "today"){

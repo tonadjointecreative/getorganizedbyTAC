@@ -2,7 +2,7 @@
 define('SAFEASANA', 1);
 include('config.php');
 
-$task_id = $_POST['id'];
+$task_id = $_POST['gid'];
 
 // $task_id = "297261977477409";
 $query = "https://app.asana.com/api/1.0/tasks/".$task_id;
