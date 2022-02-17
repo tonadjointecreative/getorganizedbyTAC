@@ -1,7 +1,7 @@
 <?php
 
 // Set timezone
-date_default_timezone_set('Europe/Amsterdam');
+date_default_timezone_set('America/Toronto');
 
 // Init CURL and Authorisation
 $ch = curl_init(); 
@@ -51,7 +51,7 @@ foreach ($workspaces as $i => $workspace) {
     }
 
     // Get Tasks
-    $query = "https://app.asana.com/api/1.0/tasks?workspace=".$workspace['gid']."&assignee=".$user_id."&completed_since=".date("Y-m-d")."&opt_fields=assignee_status,name,workspace,projects,due_on,completed";
+    $query = "https://app.asana.com/api/1.0/tasks?workspaces=".$workspace['gid']."&assignee=".$user_id."&completed_since=".date("Y-m-d")."&opt_fields=assignee_status,name,workspace,projects,due_on,completed";
     curl_setopt($ch, CURLOPT_URL, $query);
     $output = curl_exec($ch);
     $tasks = json_decode($output,true);

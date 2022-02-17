@@ -16,7 +16,7 @@ function display( $task, $workspaces, $projects ){
     if($task['completed']){
         $completed = " completed";
     }
-    echo '<li data-id="'.$task['id'].'" class="todo-item'.$completed.'">';
+    echo '<li data-id="'.$task['gid'].'" class="todo-item'.$completed.'">';
 
     
     if($task['projects'] == null){

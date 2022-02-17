@@ -3,7 +3,7 @@ define('SAFEASANA', 1);
 include('config.php');
 
 // Set timezone
-date_default_timezone_set('Europe/Amsterdam');
+date_default_timezone_set('America/Toronto');
 
 // Init CURL and Authorisation
 $ch = curl_init(); 
@@ -23,7 +23,7 @@ $workspaces = $workspaces_raw['data'];
 curl_setopt($ch, CURLOPT_URL, "https://app.asana.com/api/1.0/users/me");
 $output = curl_exec($ch);
 $user = json_decode($output,true);
-$user_id = $user['data']['id'];
+$user_id = $user['data']['gid'];
 
 // Create empty task lists
 $inbox = [];
@@ -35,7 +35,7 @@ $projects = [];
 // Loop through all workspaces
 foreach ($workspaces as $i => $workspace) {
     // Get Projects
-    $query = "https://app.asana.com/api/1.0/workspaces/".$workspace['gid']."/projects?opt_fields=name,id,color&archived=false";
+    $query = "https://app.asana.com/api/1.0/workspace/".$workspace['gid']."/projects?opt_fields=name,gid,color&archived=false";
     curl_setopt($ch, CURLOPT_URL, $query);
     $output = curl_exec($ch);
     $workspace_projects = json_decode($output,true);

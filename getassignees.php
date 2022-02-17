@@ -4,7 +4,7 @@ include('config.php');
 
 $workspace = $_POST['workspace'];
 
-$query = "https://app.asana.com/api/1.0/users?workspace=".$workspace;
+$query = "https://app.asana.com/api/1.0/users?workspaces=".$workspace;
 
 // Init CURL and Authorisation
 $ch = curl_init(); 
